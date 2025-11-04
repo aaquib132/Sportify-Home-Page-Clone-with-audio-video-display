@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="media-querie.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header">
+
+                <div class="left">
+                    <span class="spotify-logo"><a href="index.html"><svg width="32" height="32" viewBox="0 0 25 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-label="Spotify">
+                                <path fill="white"
+                                    d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546" />
+                            </svg>
+
+                        </a></span>
+
+
+                    <span>
+                        <button class="home-button">
+                            <a class="home" href="index.html">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="white"
+                                        d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732z" />
+                                </svg>
+
+                            </a>
+                        </button>
+
+                    </span>
+
+                    <form action="">
+                        <div class="search-bar">
+                            <button class="search-icon">
+                                <svg width="25" height="25" fill="#b3b3b3" viewBox="0 0 25 24">
+                                    <path
+                                        d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                                    </path>
+                                </svg>
+
+                            </button>
+                            </span>
+                            <span><input type="text" placeholder="What do you want to play?"
+                                    class="search-input"></span>
+                            <button class="browser"> <svg width="24" height="24" viewBox="0 0 24 24" fill="#b3b3b3"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2"></path>
+                                    <path
+                                        d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="right">
+                    <div class="explore-install">
+                        <span><a href="#login"><Button class="premium">Explore Premium</Button></a></span>
+                        <span><a href="#signup" class="install-button"><svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="#b3b3b3" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528-.005-.005-2.472-2.473a.75.75 0 0 1 0-1.06" />
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13" />
+                                </svg>
+                                Install App</a></span>
+                    </div>
+                    <span><a href="#login" class="bell-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                fill="#b3b3b3" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4m-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569zm4.5 8a1 1 0 1 0 2 0z" />
+                            </svg>
+                        </a></span>
+                    <span><a href="#signup"><svg width="16" height="16" viewBox="0 0 16 16" fill="#b3b3b3"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.849 10.034c-.021-.465.026-.93.139-1.381H1.669c.143-.303.375-.556.665-.724l.922-.532a1.63 1.63 0 0 0 .436-2.458 1.8 1.8 0 0 1-.474-1.081q-.014-.287.057-.563a1.12 1.12 0 0 1 .627-.7 1.2 1.2 0 0 1 .944 0q.225.1.392.281c.108.12.188.263.237.417q.074.276.057.561a1.8 1.8 0 0 1-.475 1.084 1.6 1.6 0 0 0-.124 1.9c.36-.388.792-.702 1.272-.927v-.015c.48-.546.768-1.233.821-1.958a3.2 3.2 0 0 0-.135-1.132 2.657 2.657 0 0 0-5.04 0c-.111.367-.157.75-.135 1.133.053.724.341 1.41.821 1.955A.13.13 0 0 1 2.565 6a.13.13 0 0 1-.063.091l-.922.532A3.2 3.2 0 0 0-.004 9.396v.75h3.866c.001-.033-.01-.071-.013-.112m10.568-3.4-.922-.532a.13.13 0 0 1-.064-.091.12.12 0 0 1 .028-.1c.48-.546.768-1.233.821-1.958a3.3 3.3 0 0 0-.135-1.135A2.64 2.64 0 0 0 12.7 1.233a2.67 2.67 0 0 0-3.042.64 2.65 2.65 0 0 0-.554.948c-.11.367-.156.75-.134 1.133.053.724.341 1.41.821 1.955.005.006 0 .011 0 .018.48.225.911.54 1.272.927a1.6 1.6 0 0 0-.125-1.907 1.8 1.8 0 0 1-.474-1.081q-.015-.287.057-.563a1.12 1.12 0 0 1 .627-.7 1.2 1.2 0 0 1 .944 0q.225.1.392.281.162.182.236.413c.05.184.07.375.058.565a1.8 1.8 0 0 1-.475 1.084 1.633 1.633 0 0 0 .438 2.456l.922.532c.29.169.52.421.664.724h-2.319c.113.452.16.918.139 1.383 0 .04-.013.078-.017.117h3.866v-.75a3.2 3.2 0 0 0-1.58-2.778v.004zm-3.625 6-.922-.532a.13.13 0 0 1-.061-.144.1.1 0 0 1 .025-.047 3.33 3.33 0 0 0 .821-1.958 3.2 3.2 0 0 0-.135-1.132 2.657 2.657 0 0 0-5.041 0c-.11.367-.156.75-.134 1.133.053.724.341 1.41.821 1.955a.13.13 0 0 1 .028.106.13.13 0 0 1-.063.091l-.922.532a3.2 3.2 0 0 0-1.584 2.773v.75h8.75v-.75a3.2 3.2 0 0 0-1.583-2.781zm-5.5 2.023c.143-.303.375-.556.665-.724l.922-.532a1.63 1.63 0 0 0 .436-2.458 1.8 1.8 0 0 1-.474-1.081q-.015-.287.057-.563a1.12 1.12 0 0 1 .627-.7 1.2 1.2 0 0 1 .944 0q.225.1.392.281c.108.12.188.263.237.417q.073.276.057.561a1.8 1.8 0 0 1-.475 1.084 1.632 1.632 0 0 0 .438 2.456l.922.532c.29.169.52.421.664.724z" />
+                            </svg>
+                        </a></span>
+                    <span><Button class="profile-button">A</Button></span>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!--------------------------------Main Content Starts from here --------------------------------------------------------->
+
+    <main>
+        <section class="main-content">
+
+            <!--------------------------------  (Aside Content-- left-side) --------------------------------------------------------->
+            <aside class="your-library">
+                <div class="library-header">
+                    <div class="text-library">
+                        <h3>Your Library</h3>
+                    </div>
+
+                    <div class="library-icons">
+                        <button class="pulse">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                                fill="#b3b3b3">
+                                <path
+                                    d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z" />
+                            </svg>
+                        </button>
+
+
+                        <button class="full-screen">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                                    fill="#b3b3b3">
+                                    <path
+                                        d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <span class="playlists">Playlists</span>
+
+                <div class="list-search">
+                    <button class="search-list">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true"
+                            class="e-91000-icon e-91000-baseline AFy8ta8zNE0nUMR7Dwdk" viewBox="0 0 16 16" width="16"
+                            height="16" fill="#b3b3b3" style="--encore-icon-height: 16px; --encore-icon-width: 16px;">
+                            <path
+                                d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5M.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7">
+                            </path>
+                        </svg>
+                    </button>
+
+
+
+                    <button class="list-search-icon">
+                        <span class="recent">Recents</span>
+                        <span class="list-icon"><svg data-encore-id="icon" role="img" aria-hidden="true" class="list"
+                                viewBox="0 0 16 16" width="16" height="16" fill="#b3b3b3"
+                                style="--encore-icon-height: 16px; --encore-icon-width: 16px;">
+                                <path
+                                    d="M15 14.5H5V13h10zm0-5.75H5v-1.5h10zM15 3H5V1.5h10zM3 3H1V1.5h2zm0 11.5H1V13h2zm0-5.75H1v-1.5h2z">
+                                </path>
+                            </svg></span>
+                    </button>
+
+
+                </div>
+
+                <div class="playlists-section">
+                    <div class="song-item">
+                        <img class="img-list" src="https://misc.scdn.co/liked-songs/liked-songs-300.jpg" alt=""
+                            width="80px">
+                        <div class="playlist-info">
+                            <p><strong>Liked Songs</strong></p>
+                            <p><svg viewBox="0 0 16 16" width="11.99" height="11.99" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#1cc558"
+                                        d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337z" />
+                                </svg>
+                                Playlist &bull; 6 songs</p>
+                        </div>
+                    </div>
+
+
+                    <div class="song-item">
+                        <img class="img-list" src="https://i.scdn.co/image/ab67616d000011ebc2d2a2177df997886b1a4eb9"
+                            alt="" width="80px">
+                        <div class="playlist-info">
+                            <p><strong>Relax</strong></p>
+                            <p> Playlist &bull; 6 songs</p>
+                        </div>
+                    </div>
+
+
+                    <div class="song-item">
+                        <img class="img-list" src="https://i.scdn.co/image/ab67616d00001e029411c63637b6d976a7d0e279"
+                            alt="" width="80px">
+                        <div class="playlist-info">
+                            <p><strong>Romantic Songs</strong></p>
+                            <p>Playlist &bull; 6 songs</p>
+                        </div>
+                    </div>
+
+                    <div class="song-item">
+                        <img class="img-list" src="https://i.scdn.co/image/ab67656300005f1f271520bec0ac82d57d0c2689"
+                            alt="" width="80px">
+                        <div class="playlist-info">
+                            <p><strong>Live Podcast</strong></p>
+                            <p> Playlist &bull; 6 podcasts</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--------------------------------  (Middle Content [Scrollable]) --------------------------------------------------------->
+            <article class="main-area">
+                <div class="top-button">
+                    <button class="top-selected"><span>All</span></button>
+                    <button class="top"><span>Music</span></button>
+                    <button class="top"><span>Podcasts</span></button>
+                </div>
+
+                <section>
+                    <div class="music-grid">
+                        <div class="contain-album">
+                            <div class="music-song-image"><img class="image-of-song"
+                                    src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da840fdca7a343a47920e9908d87"
+                                    alt="music song image"></div>
+                            <div class="music-song-name">
+                                <p class="text">Emraan Hashmi Hits❣</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contain-album">
+                            <div class="music-song-image"><img class="image-of-song"
+                                    src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72c1fd5625d0f089f31e7f88d6f"
+                                    alt="music song image"></div>
+                            <div class="music-song-name">
+                                <p class="text">Prem k rang me aisi doobi - {Preetam ka kuch dosh nahi hai , Vo to hai
+                                    nirdosh }</p>
+                            </div>
+                        </div>
+
+                        <div class="contain-album">
+                            <div class="music-song-image"><img class="image-of-song"
+                                    src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cee5d663f1e4891958fd33b1a"
+                                    alt="music song image"></div>
+                            <div class="music-song-name">
+                                <p class="text">Har shaam aankhon par Tera aachal lehraye, har raat yaadon ki Baaraat le
+                                    aaye.</p>
+                            </div>
+                        </div>
+
+                        <div class="contain-album">
+                            <div class="music-song-image"><img class="image-of-song"
+                                    src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/artistmix/0M4wzwZKh9SSHkOXYNvQlP/en"
+                                    alt="music song image"></div>
+                            <div class="music-song-name">
+                                <p class="text">Zain Zohaib Mix</p>
+                            </div>
+                        </div>
+
+                        <div class="contain-album">
+                            <div class="music-song-image"><img class="image-of-song"
+                                    src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/2/ab6761610000e5ebc9ac92d87de28795c1c49730/en"
+                                    alt="music song image"></div>
+                            <div class="music-song-name">
+                                <p class="text">Daily Mix 2</p>
+                            </div>
+                        </div>
+
+                        <div class="contain-album">
+                            <div class="music-song-image"><img class="image-of-song"
+                                    src="https://i.scdn.co/image/ab67616d0000b273bcb8ec035de7b2dda0f74660"
+                                    alt="music song image"></div>
+                            <div class="music-song-name">
+                                <p class="text">Tum Mile (Original Motion Picture Soundtrack)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="horizontal-scroll">
+
+                    <div class="group-text">
+                        <div class="me-made-for">
+                            <p class="made-for">Made For </p>
+                            <h2 class="me">Aaquib</h2>
+                        </div>
+                        <div class="show-item">Show all</div>
+                    </div>
+
+                    <div class="song-image-grid">
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/dw/cover/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Your shortcut to hidden gems, deep cuts, and future faves, updated every Monday.
+                                    You'll know when you hear it.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/1/ab6761610000e5ebcb6926f44f620555ba444fca/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Pritam, Vishal-Shekhar, Anuv Jain and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/3/ab6761610000e5eb9f40751f0a9ed5b0dca44fc3/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Jagjit Singh, Zain Zohaib, Nusrat Fateh Ali Khan and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/4/ab6761610000e5eb601c9af2aea18ce8c43abbb3/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Faheem Abdullah, Yawar Abdal, Tanishk Bagchi and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/5/ab6761610000e5ebaa9effe3affd5a9dad488712/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Zain Zohaib, Nusrat Fateh Ali Khan, Sahir Ali Bagga and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/daily/6/ab6761610000e5eba837a6cb82dd949d5e1f9b53/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Anuv Jain</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab6761610000e5ebb19af0ea736c6228d6eb539c/en"
+                                    alt="songs-photo">
+                            </div>
+                            <div class="title-of-song">
+                                <p>Catch all the latest music from artists you follow, plus new singles picked for you.
+                                    Updates every Friday.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </section>
+
+                <section class="horizontal-scroll">
+
+                    <div class="group-text">
+                        <div class="me-made-for">
+                            <p class="made-for"></p>
+                            <h2 class="me">Today's biggest hits</h2>
+                        </div>
+                        <div class="show-item">Show all</div>
+                    </div>
+
+                    <div class="song-image-grid">
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f000000024dd6e7535a778240e11e77c8"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"> </p>
+                            <div class="title-of-song">
+
+                                <p>Every track you're listening/should be listening to ;</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f000000025aebbea4aaab1778abdd7e59"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"></p>
+                            <div class="title-of-song">
+                                <p>India's ultimate love playlist ❤️ Cover - Saiyaara</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f00000002092ee391e35e6c20ce30c343"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"></p>
+                            <div class="title-of-song">
+                                <p>Best of the Indian Indie scene. Cover - Tsumyoki & Gini</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f00000002eb50dc87765074dc6dae8e96"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"></p>
+                            <div class="title-of-song">
+                                <p>Hottest tracks from your favourite I-Pop Icons. Cover- Sonu Nigam</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f000000025ba822c9198569c2cdaa9f62"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"></p>
+                            <div class="title-of-song">
+                                <p>All that's viral, stream now! Cover - Prem Dhillon</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f00000002e31927ebf8986c9372031a53"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"></p>
+                            <div class="title-of-song">
+                                <p>Catch the hottest Punjabi tracks. Cover - Cheema Y</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67706f000000022a64e78825adaa8794f9dd65"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name"></p>
+                            <div class="title-of-song">
+                                <p>Party-ready, the biggest Bollywood dance tracks. Cover - Stree 2</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </section>
+
+                <section class="horizontal-scroll">
+
+                    <div class="group-text">
+                        <div class="me-made-for">
+                            <p class="made-for">Inspired by your recent activity</p>
+                            <h2 class="me">Recommended for today</h2>
+                        </div>
+                        <div class="show-item">Show all</div>
+                    </div>
+
+                    <div class="song-image-grid">
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e022fc1f0e56f80b5e7cc388b3c"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Saiyaara </p>
+                            <div class="title-of-song">
+
+                                <p>Tanishk Bagchi, Vishal Mishra, Sachet-Parampara, Mithoon</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e024e84dbc51038df1a3b143d90"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Jhol - Acoustic </p>
+                            <div class="title-of-song">
+                                <p>Pritam, Vishal-Shekhar, Anuv Jain and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02cab73e6ac9bf4bf3c6931570"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Ramaiya Vastavaiya (Original Motion Picture Soundtrack)</p>
+                            <div class="title-of-song">
+                                <p>Jagjit Singh, Zain Zohaib, Nusrat Fateh Ali Khan and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e020ccca2f49bcdac5491e47b1a"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Blood Money (Original Motion Picture Soundtrack)</p>
+                            <div class="title-of-song">
+                                <p>Faheem Abdullah, Yawar Abdal, Tanishk Bagchi and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e0205be603d0ab07ff5b195554e"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Haseen</p>
+                            <div class="title-of-song">
+                                <p>Zain Zohaib, Nusrat Fateh Ali Khan, Sahir Ali Bagga and more</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02e80fd38e3f7025158e40a3ae"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Ehsaas</p>
+                            <div class="title-of-song">
+                                <p>Faheem Abdullah, Duha Shah, Vaibhav Pani, Hyder Dar</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67616d00001e022cc631c765d83b108791012e"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Besharam</p>
+                            <div class="title-of-song">
+                                <p>Catch all the latest music from artists you follow, plus new singles picked for you.
+                                    Updates every Friday.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </section>
+
+                <section class="horizontal-scroll">
+
+                    <div class="group-text">
+                        <div class="me-made-for">
+                            <p class="made-for"></p>
+                            <h2 class="me">Episodes you might like</h2>
+                        </div>
+                        <div class="show-item">Show all</div>
+                    </div>
+
+                    <div class="song-image-grid">
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f6a69786a1519c00baf201659"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Bumble Date Killer Case - Maya Gogoi</p>
+                            <div class="title-of-song">
+
+                                <p>Jun 10 &bull; 30 min</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f3fb41d88c88d8e8811b63583"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">165. The 8 Year Old Murderer: Amarjeet Sada </p>
+                            <div class="title-of-song">
+                                <p>Sep 25 &bull; 33 min</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fb7b4d6330c3288a93b7617b0"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">It All Started with Friendship But...| Chandan-Sheru Case| Bihar |
+                                Wronged</p>
+                            <div class="title-of-song">
+                                <p>Sep 30 &bull; 23 min</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f0c8bdb8e0cbbd852aa064ead"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Billionaire's Brain vs Your Brain: Morning Routine, Focus. Pain &
+                                Addiction | FO403 Raj Shamani</p>
+                            <div class="title-of-song">
+                                <p>Sep 2 &bull; 106 min</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f21362d7cfbd5dd27c35f2351"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Meri Biwi Jinn Hai ❤️ Ep-5 | Delhi Ki Ek Anokhi Love Story | Real
+                                Horror Story</p>
+                            <div class="title-of-song">
+                                <p>Oct 25 &bull; 26 min</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f58709167d21bd1c2b0a34a88"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">The BASEMENT l Terrifying Horror Encounter</p>
+                            <div class="title-of-song">
+                                <p>Oct 14 &bull; 20 min</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-for-song-and-title">
+                            <div class="songs-photo">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f4d73c291f44577dfc66de921"
+                                    alt="songs-photo">
+                            </div>
+                            <p class="song-name">Indian Alcohol Brands You Must Try Next Time | Hidden Gems of Desi
+                                Drinks</p>
+                            <div class="title-of-song">
+                                <p>Oct 25 &bull; 7 min</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="horizontal-line-flex">
+                        <hr class="horizontal-line">
+                    </div>
+                    <footer>
+                        <nav>
+                            <section>
+                                <div class="details">
+                                    <div class="detail-social-media">
+                                        <div class="text-detail">
+                                            <div class="detail-list">
+                                                <p class="detail-heading">Company</p>
+                                                <span class="detail-lines">About</span>
+                                                <span class="detail-lines">Jobs</span>
+                                                <span class="detail-lines">For the Record</span>
+                                            </div>
+
+                                            <div class="detail-list">
+                                                <p class="detail-heading">Communities</p>
+                                                <span class="detail-lines">For Artists</span>
+                                                <span class="detail-lines">Developers</span>
+                                                <span class="detail-lines">Advertising</span>
+                                                <span class="detail-lines">Investors</span>
+                                                <span class="detail-lines">Vendors</span>
+                                            </div>
+
+                                            <div class="detail-list">
+                                                <p class="detail-heading">Useful links</p>
+                                                <span class="detail-lines">Support</span>
+                                                <span class="detail-lines">Free Mobile App</span>
+                                                <span class="detail-lines">Popular by Country</span>
+                                                <span class="detail-lines">Investors</span>
+                                                <span class="detail-lines">Import your music</span>
+                                            </div>
+
+                                            <div class="detail-list">
+                                                <p class="detail-heading">Spotify Plans</p>
+                                                <span class="detail-lines">Premium Individual</span>
+                                                <span class="detail-lines">Premium Duo</span>
+                                                <span class="detail-lines">Premium Student</span>
+                                                <span class="detail-lines">Spotify Free</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="social-detail">
+                                            <button class="social-media-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="white">
+                                                    <path
+                                                        d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.65 2.65 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.5 2.5 0 0 1-.921-.599 2.5 2.5 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.5 2.5 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.9 3.9 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942S0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372s1.126.048 3.299.048 2.445-.01 3.298-.048c.853-.04 1.433-.174 1.94-.372a4.1 4.1 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942S16 10.172 16 7.999s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.9 3.9 0 0 0-.923-1.418A3.9 3.9 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05z" />
+                                                    <path
+                                                        d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216m0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335m4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92" />
+                                                </svg>
+
+                                            </button>
+                                            <button class="social-media-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="white">
+                                                    <path
+                                                        d="M13.54 3.889a2.97 2.97 0 0 0 1.333-1.683 6 6 0 0 1-1.929.738 3 3 0 0 0-.996-.706 3 3 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.93 2.93 0 0 0-.889 2.15q0 .318.08.691a8.5 8.5 0 0 1-3.484-.932A8.5 8.5 0 0 1 1.532 2.54a3 3 0 0 0-.413 1.523q0 .778.361 1.445.36.668.988 1.08a2.9 2.9 0 0 1-1.373-.374v.04q0 1.088.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.94 2.94 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.95 2.95 0 0 0 1.77.603 5.94 5.94 0 0 1-3.77 1.302q-.365 0-.722-.048A8.4 8.4 0 0 0 5.15 14q1.358 0 2.572-.361 1.215-.36 2.147-.988a9 9 0 0 0 1.683-1.46q.75-.834 1.234-1.798a9.5 9.5 0 0 0 .738-1.988 8.4 8.4 0 0 0 .246-2.429 6.2 6.2 0 0 0 1.508-1.563q-.84.373-1.738.476" />
+                                                </svg>
+                                            </button>
+                                            <button class="social-media-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                                    height="16" fill="white">
+                                                    <path
+                                                        d="M16 8a8 8 0 1 0-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8 8 0 0 0 16 8z" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="horizontal-line-flex">
+
+                                <hr class="horizontal-line">
+
+                            </div>
+
+
+
+                            <section>
+                                <div class="legal-copyright">
+                                    <div class="legal">
+                                        <span class="legal-text">Legal</span>
+                                        <span class="legal-text">Safety & Privacy Center</span>
+                                        <span class="legal-text">Privacy Policy</span>
+                                        <span class="legal-text">Cookies</span>
+                                        <span class="legal-text">About Ads</span>
+                                        <span class="legal-text">Accessibility</span>
+
+                                    </div>
+                                    <div class="copyright">
+                                        <p class="copyright-text">© 2025 Spotify AB</p>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                        </nav>
+                    </footer>
+                </section>
+
+
+
+            </article>
+
+            <!---------------------------------(Right Side Video Preview)------------------------------------------------------>
+
+            <aside class="preview-section1">
+                <section class="preview-section">
+
+                    <div class="preview-video-title">
+                        <p class="emraan">Emraan Hashmi Hits❣</p>
+                        <div class="artist">
+                            <div class="name-artist">
+                                <h2>Tujhe Sochta Hoon</h2>
+                                <p>Pritam, KK</p>
+                            </div>
+
+
+                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                class="e-91000-icon e-91000-baseline" viewBox="0 0 16 16" width="16px" height="16px"
+                                fill="white"
+                                style="--encore-icon-height: var(--encore-graphic-size-decorative-smaller); --encore-icon-width: var(--encore-graphic-size-decorative-smaller);">
+                                <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8">
+                                </path>
+                                <path
+                                    d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75">
+                                </path>
+                            </svg>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="credits">
+                                <h2 class="credits-name">Credits</h2>
+                                <p class="show-item">Show all</p>
+                            </div>
+                            <div class="artist-credit-follow">
+                                <div class="artist-credit-name">
+                                    <h3 class="artist-ka">Pritam</h3>
+                                    <p class="main-ka">Main Artist</p>
+                                </div>
+                                <div>
+                                    <button class="follow-button">Follow</button>
+                                </div>
+                            </div>
+
+                            <div class="artist-credit-follow">
+                                <div class="artist-credit-name">
+                                    <h3 class="artist-ka">KK</h3>
+                                    <p class="main-ka">Main Artist</p>
+                                </div>
+                                <div>
+                                    <button class="follow-button">Follow</button>
+                                </div>
+                            </div>
+
+                            <div class="artist-credit-follow">
+                                <div class="artist-credit-name">
+                                    <h3 class="artist-ka">Pritam Chakraborty</h3>
+                                    <p class="main-ka">Composer</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <div class="credits">
+                                <h2 class="credits-name">Next in queue</h2>
+                                <p class="show-item">Open quene</p>
+                            </div>
+
+                            <div class="aside-last">
+                                <img class="last-img"
+                                    src="https://i.scdn.co/image/ab67616d000011ebc32737e2c7f606beecbf1bae"
+                                    alt="song image">
+                                <div>
+                                    <p class="song-name">Mere Bina</p>
+                                    <div class="title-of-song-artist">
+                                        <p>Pritam, Nikhil D'S...</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="video-gradient">
+                        <video loop muted id="video" src="video.mp4" class="preview-video" type="video/mp4">
+                        </video>
+
+                    </div>
+                </section>
+            </aside>
+        </section>
+
+        <section>
+            <aside class="audio-section">
+                <div class="left-audio-side">
+                    <div><img class="audio-image" src="https://i.scdn.co/image/ab67616d0000485171da5e89467bd75d2ed9f1fa"
+                            alt="">
+                    </div>
+
+                    <div>
+                        <p class="song-name" style="color: white;">Tujhe Sochta Hoon</p>
+                        <div class="title-of-song-artist">
+                            <p>Pritam, KK</p>
+                        </div>
+                    </div>
+
+
+
+                    <button class="add-btn">
+                        <svg role="img" aria-hidden="true" viewBox="0 0 16 16" width="20" height="20" fill="#b3b3b3">
+                            <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8">
+                            </path>
+                            <path
+                                d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75">
+                            </path>
+                        </svg>
+                    </button>
+
+
+                </div>
+
+                <div class="middle-audio-section">
+                    <div class="action-button">
+                        <button class="action-btn">
+                            <svg viewBox="0 0 16 16" width="16" height="16" fill="#b3b3b3">
+                                <path
+                                    d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z">
+                                </path>
+                                <path
+                                    d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <button class="action-btn">
+                            <svg viewBox="0 0 16 16" width="16" height="16" fill="#b3b3b3">
+                                <path
+                                    d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <button onclick="playPause()" id="ctrlIcon" class="play-btn">
+                            <svg viewBox="0 0 16 16" width="16" height="16" fill="">
+                                <path id="playIcon"
+                                    d="M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <button class="action-btn">
+                            <svg viewBox="0 0 16 16" width="16" height="16" fill="#b3b3b3">
+                                <path
+                                    d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7z">
+                                </path>
+                            </svg>
+                        </button>
+
+
+                        <button class="action-btn">
+                            <svg viewBox="0 0 16 16" width="16" height="16" fill="#b3b3b3">
+                                <path
+                                    d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75z">
+                                </path>
+                            </svg>
+                        </button>
+
+
+                    </div>
+
+                    <div><audio id="audio" src="audio.mp3" type="audio/mpeg"></audio></div>
+                    <div class="time-wrapper">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" value="0" id="progress">
+                    <span id="totalTime">0:00</span>
+                </div>
+
+                </div>
+
+                <div class="right-audio-side">
+
+                    <button class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                            fill="#b3b3b3">
+                            <path d="M11.196 8 6 5v6z"></path>
+                            <path
+                                d="M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                    <button class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                            fill="#b3b3b3">
+                            <path
+                                d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797M10.5 8.118l-2.619-2.62L4.74 9.075 2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045z">
+                            </path>
+                        </svg>
+
+
+                    </button>
+
+                    <button class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                            fill="#b3b3b3">
+                            <path
+                                d="M15 15H1v-1.5h14zm0-4.5H1V9h14zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5m2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                    <button class="action-btn">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                            fill="#b3b3b3">
+                            <path
+                                d="M6 2.75C6 1.784 6.784 1 7.75 1h6.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15h-6.5A1.75 1.75 0 0 1 6 13.25zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h6.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25zm-6 0a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25H4V11H1.75A1.75 1.75 0 0 1 0 9.25v-6.5C0 1.784.784 1 1.75 1H4v1.5zM4 15H2v-1.5h2z" />
+                            <path d="M13 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-1-5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg>
+
+
+                    </button>
+
+                    <button class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                            fill="#b3b3b3" aria-label="Volume high">
+                            <path
+                                d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.64 3.64 0 0 1-1.33-4.967 3.64 3.64 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.14 2.14 0 0 0 0 3.7l5.8 3.35V2.8zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88" />
+                            <path d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127z" />
+                        </svg>
+
+
+                    </button>
+
+                    <button class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
+                            fill="#b3b3b3" aria-label="Icon">
+                            <path
+                                d="M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16z" />
+                            <path
+                                d="M15.25 9.007a.75.75 0 0 1 .75.75v4.493a.75.75 0 0 1-.75.75H9.325a.75.75 0 0 1-.75-.75V9.757a.75.75 0 0 1 .75-.75z" />
+                        </svg>
+
+                    </button>
+
+                    <button class="action-btn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.25 3C0.25 2.0335 1.0335 1.25 2 1.25H5.375V2.75H2C1.86193 2.75 1.75 2.86193 1.75 3V5.42857H0.25V3ZM14 2.75H10.625V1.25H14C14.9665 1.25 15.75 2.0335 15.75 3V5.42857H14.25V3C14.25 2.86193 14.1381 2.75 14 2.75ZM1.75 10.5714V13C1.75 13.1381 1.86193 13.25 2 13.25H5.375V14.75H2C1.0335 14.75 0.25 13.9665 0.25 13V10.5714H1.75ZM14.25 13V10.5714H15.75V13C15.75 13.9665 14.9665 14.75 14 14.75H10.625V13.25H14C14.1381 13.25 14.25 13.1381 14.25 13Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+
+
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    <script>
+
+        let progress = document.getElementById("progress");
+        let audio = document.getElementById("audio");
+        let video = document.getElementById("video");
+        let ctrlIcon = document.getElementById("ctrlIcon");
+        let currentTimeEl = document.getElementById("currentTime");
+        let totalTimeEl = document.getElementById("totalTime");
+
+        audio.onloadedmetadata = function () {
+            progress.max = audio.duration;
+            progress.value = audio.currentTime;
+            totalTimeEl.textContent = formatTime(audio.duration);
+        }
+        
+
+        function playPause() {
+            if (audio.paused) {
+                audio.play();
+                video.play();
+                playIcon.setAttribute(
+                    "d",
+                    "M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7z"
+                );
+            } else {
+                audio.pause();
+                video.pause();
+                playIcon.setAttribute(
+                    "d",
+                    "M3 1.713a.7.7 0 0 1 1.05-.607l10.89 6.288a.7.7 0 0 1 0 1.212L4.05 14.894A.7.7 0 0 1 3 14.288z"
+                );
+            }
+        }
+
+        audio.addEventListener("timeupdate", () => {
+            progress.value = audio.currentTime;
+            let value = (audio.currentTime / audio.duration) * 100;
+            progress.style.background = `linear-gradient(to right, white ${value}%, #2a2a2a ${value}%)`;
+
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+        });
+
+        progress.onchange = function () {
+            audio.play();
+            audio.currentTime = progress.value;
+            playPause()
+            if (audio.paused) {
+                audio.play();
+
+                playIcon.setAttribute(
+                    "d",
+                    "M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7z"
+                );
+
+            }
+        }
+
+        function formatTime(t) {
+            let minutes = Math.floor(t / 60);
+            let seconds = Math.floor(t % 60);
+            if (seconds < 10) seconds = "0" + seconds;
+            return `${minutes}:${seconds}`;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
